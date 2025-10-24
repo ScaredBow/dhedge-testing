@@ -1,0 +1,35 @@
+{
+  "name": "dhedge-eth-short-bot",
+  "version": "1.0.0",
+  "description": "Algorithmic trading bot that shorts ETH/USDC on dHEDGE with a regime–momentum hybrid strategy.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p .",
+    "backtest": "ts-node src/cli/backtest.ts",
+    "paper": "ts-node src/cli/live.ts --paper",
+    "live": "ts-node src/cli/live.ts",
+    "lint": "echo 'No linter configured'"
+  },
+  "keywords": [
+    "dHEDGE",
+    "trading",
+    "bot",
+    "ETH",
+    "short"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@dhedge/v2-sdk": "*",
+    "ethers": "^6.8.0",
+    "dotenv": "^16.3.1",
+    "pino": "^8.14.1",
+    "zod": "^3.22.4",
+    "node-cron": "^3.0.2",
+    "talib-lite": "^1.0.5"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}
