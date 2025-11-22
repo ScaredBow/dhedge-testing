@@ -45,6 +45,22 @@ This repository contains a TypeScript implementation of a short‑bias algorithm
 
    The command writes `trades.csv`, `equity_curve.csv` and `summary.json` into the specified output directory.
 
+5. **Run the CBBI rotation backtest or bot (Arbitrum/Toros)**:
+
+   - To regenerate the bitcoin/CBBI regime backtest artifact:
+
+     ```sh
+     npm run cbbi-backtest
+     ```
+
+   - To paper-trade the hourly CBBI rebalance loop (logs intended trades; wire execution in `src/cli/cbbiTradingBot.ts`):
+
+     ```sh
+     npm run cbbi-bot
+     ```
+
+   See `docs/dhedge-setup.md` for vault setup details on dHEDGE/Toros.
+
 ## Repository layout
 
 ```
