@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc -p .",
     "backtest": "ts-node src/cli/backtest.ts",
+    "cbbi-backtest": "ts-node src/cli/cbbiBacktest.ts",
     "paper": "ts-node src/cli/live.ts --paper",
     "live": "ts-node src/cli/live.ts",
     "lint": "echo 'No linter configured'"
@@ -24,9 +25,9 @@
     "ethers": "^6.8.0",
     "dotenv": "^16.3.1",
     "pino": "^8.14.1",
+    "pino-pretty": "^10.3.1",
     "zod": "^3.22.4",
-    "node-cron": "^3.0.2",
-    "talib-lite": "^1.0.5"
+    "node-cron": "^3.0.2"
   },
   "devDependencies": {
     "ts-node": "^10.9.1",
